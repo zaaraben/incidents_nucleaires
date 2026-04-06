@@ -1,0 +1,50 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer": {            
+      "incidents_nucleaires": {
+        "tooltipPosition": "bottom-left",
+        "title": "Filtrer",
+        "legendTitle": "Sélectionner une donnée :",
+        "style": {
+          "colorButton": "#ff6b6b",
+          "selectedBtnColor": "#ff6b6b",
+          "unSelectedBtnColor": "#0a0405",
+          "textSelectBtnColor": "white",
+          "left": "275px",
+          "top":"600px"
+        },
+        "open": true,
+        "zoomOnFeatures": false,
+        "layers": [
+          {
+            "layerId": "incidents_nucleaires",
+            "filter": [
+              {
+                "attribut": "niveau_ines",
+                "type": "button",
+                "label": "Niveau INES",
+                "updateOnChange": false
+              },
+              {
+                "attribut": "statut",
+                "type": "button",
+                "label": "Statut",
+                "updateOnChange": false
+              },
+              {
+                "attribut": "type_alerte",
+                "type": "button",
+                "label": "Type d'alerte",
+                "updateOnChange": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
