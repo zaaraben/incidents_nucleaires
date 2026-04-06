@@ -30,7 +30,7 @@
          expanded="false"
          type="customlayer"
          url="apps/incidents_nucleaires/customlayer/sites_customlayer.js"
-         legendurl="apps/incidents_nucleaires/img/legende_centrales.png"
+         legendurl="apps/incidents_nucleaires/img/legende_centrales2.png"
          vectorlegend="false"
          searchable="false" queryable="true"
          tooltip="true"
