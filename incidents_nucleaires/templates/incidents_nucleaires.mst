@@ -1,0 +1,9 @@
+<div class="popup-content incidents-popup">
+  <h3>{{nom_site}}</h3>
+  <p><strong>Niveau INES :</strong> {{niveau_ines}}{{#niveau_ines_label}} — {{niveau_ines_label}}{{/niveau_ines_label}}</p>
+  {{#date_incident}}<p><strong>Date de l'incident :</strong> {{date_incident}}</p>{{/date_incident}}
+  {{#date_declaration}}<p><strong>Date de déclaration :</strong> {{date_declaration}}</p>{{/date_declaration}}
+  {{#date_publication}}<p><strong>Date de publication :</strong> {{date_publication}}</p>{{/date_publication}}
+  {{#mois_reference}}<p><strong>Mois de référence :</strong> {{mois_reference}}</p>{{/mois_reference}}
+  {{#commentaire}}<p><strong>Commentaire :</strong> {{commentaire}}</p>{{/commentaire}}
+</div>

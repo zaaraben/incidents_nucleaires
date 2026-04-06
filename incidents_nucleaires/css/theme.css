@@ -1,0 +1,15 @@
+.mv-title {
+  font-weight: 700;
+}
+#layers-container-box {
+  max-width: 360px;
+}
+.incidents-popup h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.incidents-popup p {
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
