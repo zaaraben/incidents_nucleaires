@@ -1,16 +1,106 @@
-<div class="help-content">
-  <h3>Incidents nucléaires déclarés</h3>
-  <p>Cette carte affiche les incidents nucléaires déclarés, à partir d'un relevé local alimenté depuis les publications de l'ASNR et d'un référentiel local des sites.</p>
-  <p>Chaque point correspond à un site. Lorsqu'un site apparaît plusieurs fois, cela signifie que plusieurs incidents ont été relevés sur ce même site.</p>
-  <h4>Données affichées</h4>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aide — Incidents nucléaires</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.45; margin: 0; padding: 18px; color: #222; }
+    h1 { font-size: 20px; margin: 0 0 12px 0; }
+    h2 { font-size: 16px; margin: 18px 0 8px 0; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 18px; }
+    code, pre { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+    .box { background: #fafafa; border: 1px solid #e6e6e6; border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+    .legend { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 10px; }
+    .chip { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; border: 1px solid #ddd; background: #fff; }
+    .k { font-weight: 700; }
+    .small { font-size: 13px; color: #444; }
+    .sep { height: 1px; background: #eee; margin: 16px 0; }
+  </style>
+</head>
+
+<body>
+  <h1>Aide — Carte des incidents nucléaires</h1>
+
+  <div class="box">
+    <p>
+      Cette carte recense les <span class="k">incidents</span> et <span class="k">alertes</span> signalés sur des sites nucléaires,
+      avec un <span class="k">historique par site</span> et un statut de suivi.
+    </p>
+    <p class="small">
+      Objectif : visualiser rapidement où se situent les événements, comprendre leur niveau et suivre leur évolution dans le temps.
+    </p>
+  </div>
+
+  <h2>1) Comment utiliser la carte</h2>
   <ul>
-    <li>Nom du site</li>
-    <li>Niveau INES</li>
-    <li>Date de l'incident</li>
-    <li>Date de déclaration</li>
-    <li>Date de publication</li>
-    <li>Commentaire éventuel</li>
+    <li><span class="k">Zoom / déplacement</span> : molette du trackpad/souris, ou boutons + / −.</li>
+    <li><span class="k">Cliquer un point</span> : ouvre la fiche du site avec le détail de l’alerte (et l’historique s’il existe).</li>
+    <li><span class="k">Survol</span> (si activé) : affiche un résumé rapide dans une bulle.</li>
+    <li><span class="k">Recherche</span> (si disponible) : rechercher un site par nom.</li>
   </ul>
-  <h4>Source</h4>
-  <p>Source métier : ASNR. Géolocalisation : référentiel local.</p>
-</div>
+
+  <h2>2) Lecture des informations</h2>
+  <div class="box">
+    <p>Chaque alerte/incident est décrit par des champs du type :</p>
+    <ul>
+      <li><span class="k">Nom du site</span> (ex: centrale, installation, site de stockage…)</li>
+      <li><span class="k">Type d’alerte</span> (ex: anomalie, incident, exercice, information…)</li>
+      <li><span class="k">Niveau INES</span> (quand il est connu)</li>
+      <li><span class="k">Priorité</span> / <span class="k">niveau d’alerte</span> (faible → critique)</li>
+      <li><span class="k">Statut</span> (en cours, clôturé…)</li>
+      <li><span class="k">Date</span> de l’alerte (et éventuellement date de clôture)</li>
+      <li><span class="k">Description</span> (résumé textuel)</li>
+    </ul>
+    <p class="small">
+      Si une valeur est absente ou non communiquée, elle peut apparaître comme <span class="chip">NC</span>.
+    </p>
+  </div>
+
+  <h2>3) Légende (interprétation)</h2>
+  <p class="small">La légende exacte dépend du paramétrage de la carte. Exemple de lecture :</p>
+
+  <div class="legend">
+    <div class="box">
+      <p><span class="k">Couleur / taille du point</span> : reflète généralement la sévérité (priorité ou niveau INES).</p>
+      <p class="small">Plus c’est “haut”, plus l’événement est important à traiter.</p>
+    </div>
+    <div class="box">
+      <p><span class="k">Forme alternative</span> (si utilisée) : peut indiquer une donnée manquante ou un cas particulier.</p>
+      <p class="small">Exemple : un symbole spécifique pour les sites dont l’information est <span class="chip">NC</span>.</p>
+    </div>
+  </div>
+
+  <h2>4) Historique des alertes par site</h2>
+  <div class="box">
+    <p>
+      Lorsqu’un site a plusieurs événements, la fiche peut afficher un <span class="k">historique</span> (liste chronologique).
+    </p>
+    <ul>
+      <li>Les événements sont en général triés du <span class="k">plus récent</span> au plus ancien.</li>
+      <li>Chaque entrée reprend : date, type, niveau, statut, description.</li>
+      <li>Un site peut avoir des événements “clôturés” et d’autres “en cours”.</li>
+    </ul>
+  </div>
+
+  <h2>5) Statuts et cas “NC”</h2>
+  <ul>
+    <li><span class="k">En cours</span> : l’événement est suivi, l’information peut évoluer.</li>
+    <li><span class="k">Clôturé</span> : l’événement est terminé / stabilisé / archivé.</li>
+    <li><span class="k">NC</span> : donnée non communiquée (ou indisponible dans la source).</li>
+  </ul>
+
+  <div class="sep"></div>
+
+  <h2>6) Qualité des données & limites</h2>
+  <div class="box">
+    <p class="small">
+      Cette carte dépend des données publiées par les sources utilisées. Certaines valeurs peuvent être mises à jour après coup
+      (ex: niveau INES ou statut). Les champs <span class="chip">NC</span> peuvent être temporaires ou permanents selon la publication.
+    </p>
+  </div>
+
+
+</body>
+</html>
