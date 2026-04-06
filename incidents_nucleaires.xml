@@ -24,20 +24,7 @@
     <themes>                  
         <theme name="Incidents nucléaires" collapsed="true" id="incidents" icon="fas fa-exclamation-triangle">
 
-  <!-- SITES -->
-  <layer id="sites_nucleaires" name="Centrales nucléaires"
-         visible="true"
-         expanded="false"
-         type="customlayer"
-         url="apps/incidents_nucleaires/customlayer/sites_customlayer.js"
-         legendurl="apps/incidents_nucleaires/img/legende_centrales2.png"
-         vectorlegend="false"
-         searchable="false" queryable="true"
-         tooltip="true"
-         tooltipcontent="{{nom_site}}"
-         attribution="Référentiel sites">
-    <template url="apps/incidents_nucleaires/templates/sites.mst"></template>
-  </layer>
+  
 
   <!-- ALERTES -->
   <layer id="alertes_2025" name="Alertes / incidents (2025)"
@@ -52,7 +39,20 @@
          attribution="Relevés incidents nucléaires (2025)">
     <template url="apps/incidents_nucleaires/templates/alertes.mst"></template>
   </layer>
-
+<!-- SITES -->
+  <layer id="sites_nucleaires" name="Centrales nucléaires"
+         visible="true"
+         expanded="false"
+         type="customlayer"
+         url="apps/incidents_nucleaires/customlayer/sites_customlayer.js"
+         legendurl="apps/incidents_nucleaires/img/legende_centrales2.png"
+         vectorlegend="false"
+         searchable="false" queryable="true"
+         tooltip="true"
+         tooltipcontent="{{nom_site}}"
+         attribution="Référentiel sites">
+    <template url="apps/incidents_nucleaires/templates/sites.mst"></template>
+  </layer>
 </theme>
 
 
