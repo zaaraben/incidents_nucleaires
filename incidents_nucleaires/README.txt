@@ -13,6 +13,4 @@ Contenu :
 URL locale attendue :
 http://localhost:8888/mviewer/?config=apps/incidents_nucleaires/incidents_nucleaires.xml
 
-Pré-requis :
-- le socle mviewer complet doit être présent dans /Applications/MAMP/htdocs/mviewer
-- le dossier incidents_nucleaires doit être copié dans /Applications/MAMP/htdocs/mviewer/apps/
+
