@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.875,
+          47.50972222222222
+        ]
+      },
+      "properties": {
+        "nom_site": "Belleville",
+        "nombre_total_incidents": 138
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6908333333333333,
+          45.25611111111111
+        ]
+      },
+      "properties": {
+        "nom_site": "Blayais",
+        "nombre_total_incidents": 151
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.270833333333333,
+          45.79833333333333
+        ]
+      },
+      "properties": {
+        "nom_site": "Bugey",
+        "nombre_total_incidents": 192
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.218055555555556,
+          49.41583333333333
+        ]
+      },
+      "properties": {
+        "nom_site": "Cattenom",
+        "nombre_total_incidents": 213
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.17027777777777778,
+          47.230555555555554
+        ]
+      },
+      "properties": {
+        "nom_site": "Chinon B",
+        "nombre_total_incidents": 187
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.790555555555556,
+          50.09
+        ]
+      },
+      "properties": {
+        "nom_site": "Chooz B",
+        "nombre_total_incidents": 116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6527777777777778,
+          46.45666666666667
+        ]
+      },
+      "properties": {
+        "nom_site": "Civaux",
+        "nombre_total_incidents": 132
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.756666666666667,
+          44.63305555555556
+        ]
+      },
+      "properties": {
+        "nom_site": "Cruas",
+        "nombre_total_incidents": 243
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5166666666666666,
+          47.73305555555556
+        ]
+      },
+      "properties": {
+        "nom_site": "Dampierre",
+        "nombre_total_incidents": 158
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8816666666666666,
+          49.53638888888889
+        ]
+      },
+      "properties": {
+        "nom_site": "Flamanville",
+        "nombre_total_incidents": 131
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8452777777777778,
+          44.10666666666667
+        ]
+      },
+      "properties": {
+        "nom_site": "Golfech",
+        "nombre_total_incidents": 91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "nom_site": "Gravelines",
+        "nombre_total_incidents": 292
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.517777777777778,
+          48.515277777777776
+        ]
+      },
+      "properties": {
+        "nom_site": "Nogent",
+        "nombre_total_incidents": 122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6352777777777777,
+          49.85777777777778
+        ]
+      },
+      "properties": {
+        "nom_site": "Paluel",
+        "nombre_total_incidents": 206
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2119444444444445,
+          49.976111111111116
+        ]
+      },
+      "properties": {
+        "nom_site": "Penly",
+        "nombre_total_incidents": 82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.755277777777778,
+          45.404444444444444
+        ]
+      },
+      "properties": {
+        "nom_site": "Saint-Alban",
+        "nombre_total_incidents": 103
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5836111111111113,
+          47.723888888888894
+        ]
+      },
+      "properties": {
+        "nom_site": "Saint-Laurent",
+        "nombre_total_incidents": 91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.731388888888889,
+          44.33083333333334
+        ]
+      },
+      "properties": {
+        "nom_site": "Tricastin",
+        "nombre_total_incidents": 200
+      }
+    }
+  ]
+}

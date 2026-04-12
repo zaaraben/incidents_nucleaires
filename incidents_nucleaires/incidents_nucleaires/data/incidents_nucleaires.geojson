@@ -1,0 +1,507 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5166666666666666,
+          47.73305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-09-001",
+        "nom_site": "Dampierre",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-09",
+        "date_incident": "2025-09-24",
+        "date_declaration": "2025-09-26",
+        "date_publication": "2025-09-24",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-09-002",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-09",
+        "date_incident": "2025-09-09",
+        "date_declaration": "2025-09-12",
+        "date_publication": "2025-09-19",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6352777777777777,
+          49.85777777777778
+        ]
+      },
+      "properties": {
+        "id": "2025-09-003",
+        "nom_site": "Paluel",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-09",
+        "date_incident": "2025-09-04",
+        "date_declaration": "2025-09-09",
+        "date_publication": "2025-09-19",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8816666666666666,
+          49.53638888888889
+        ]
+      },
+      "properties": {
+        "id": "2025-08-001",
+        "nom_site": "Flamanville",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-08",
+        "date_incident": "2025-08-20",
+        "date_declaration": "2025-09-18",
+        "date_publication": "2025-10-03",
+        "annee_publication": "2025",
+        "mois_publication": "2025-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.731388888888889,
+          44.33083333333334
+        ]
+      },
+      "properties": {
+        "id": "2025-08-002",
+        "nom_site": "Tricastin",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-08",
+        "date_incident": "2025-08-19",
+        "date_declaration": "2025-08-21",
+        "date_publication": "2025-08-26",
+        "annee_publication": "2025",
+        "mois_publication": "2025-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.218055555555556,
+          49.41583333333333
+        ]
+      },
+      "properties": {
+        "id": "2025-08-003",
+        "nom_site": "Cattenom",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-08",
+        "date_incident": "2025-08-11",
+        "date_declaration": "2025-08-14",
+        "date_publication": "2025-08-25",
+        "annee_publication": "2025",
+        "mois_publication": "2025-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.756666666666667,
+          44.63305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-08-004",
+        "nom_site": "Cruas",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-08",
+        "date_incident": "2025-08-11",
+        "date_declaration": "2025-08-18",
+        "date_publication": "2025-08-25",
+        "annee_publication": "2025",
+        "mois_publication": "2025-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-08-005",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8816666666666666,
+          49.53638888888889
+        ]
+      },
+      "properties": {
+        "id": "2025-08-006",
+        "nom_site": "Flamanville",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-08",
+        "date_incident": "2025-08-05",
+        "date_declaration": "2025-08-12",
+        "date_publication": "2025-08-21",
+        "annee_publication": "2025",
+        "mois_publication": "2025-08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-07-001",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-21",
+        "date_declaration": "2025-09-24",
+        "date_publication": "2025-09-30",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09",
+        "commentaire": "date de publication source invalide: 31-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5166666666666666,
+          47.73305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-07-002",
+        "nom_site": "Dampierre",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-05-26",
+        "date_declaration": "2025-05-30",
+        "date_publication": "2025-09-30",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09",
+        "commentaire": "date de publication source invalide: 31-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.756666666666667,
+          44.63305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-07-003",
+        "nom_site": "Cruas",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_declaration": "2025-09-29",
+        "date_publication": "2025-09-30",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09",
+        "commentaire": "date incident non renseignée; date de publication source invalide: 31-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-07-004",
+        "nom_site": "Gravelines",
+        "niveau_ines": 2,
+        "niveau_ines_label": "Incident",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-23",
+        "date_declaration": "2025-09-25",
+        "date_publication": "2025-09-30",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-07-005",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-17",
+        "date_declaration": "2025-09-22",
+        "date_publication": "2025-09-29",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          NaN,
+          NaN
+        ]
+      },
+      "properties": {
+        "id": "2025-07-006",
+        "nom_site": "St-Laurent",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-12",
+        "date_declaration": "2025-09-18",
+        "commentaire": "date de publication source illisible: 2 0 98"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.756666666666667,
+          44.63305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-07-007",
+        "nom_site": "Cruas",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-07",
+        "date_declaration": "2025-09-10",
+        "date_publication": "2025-09-17",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5166666666666666,
+          47.73305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-07-008",
+        "nom_site": "Dampierre",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-04",
+        "date_declaration": "2025-09-04",
+        "date_publication": "2025-09-15",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5166666666666666,
+          47.73305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-07-009",
+        "nom_site": "Dampierre",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-06-25",
+        "date_declaration": "2025-09-04",
+        "date_publication": "2025-09-15",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8816666666666666,
+          49.53638888888889
+        ]
+      },
+      "properties": {
+        "id": "2025-07-010",
+        "nom_site": "Flamanville",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-07-12",
+        "date_declaration": "2025-05-19",
+        "date_publication": "2025-09-15",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09",
+        "commentaire": "à vérifier: date incident notée '12' sans mois; supposée 12-07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-07-011",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_declaration": "2024-12-26",
+        "date_publication": "2025-09-08",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09",
+        "commentaire": "date incident source: 'début 12 24' à normaliser manuellement"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8452777777777778,
+          44.10666666666667
+        ]
+      },
+      "properties": {
+        "id": "2025-07-012",
+        "nom_site": "Golfech",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-06-15",
+        "date_declaration": "2025-06-16",
+        "date_publication": "2025-09-08",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-07-013",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-06-14",
+        "date_declaration": "2025-06-20",
+        "date_publication": "2025-09-07",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.270833333333333,
+          45.79833333333333
+        ]
+      },
+      "properties": {
+        "id": "2025-07-014",
+        "nom_site": "Bugey",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "mois_reference": "2025-07",
+        "date_incident": "2025-06-18",
+        "date_declaration": "2025-06-25",
+        "date_publication": "2025-09-07",
+        "annee_publication": "2025",
+        "mois_publication": "2025-09"
+      }
+    }
+  ]
+}

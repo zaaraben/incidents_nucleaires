@@ -1,0 +1,241 @@
+{
+    "type": "FeatureCollection",
+    "name": "sites_nucleaires_fr",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-BELLEVILLE-01",
+        "geometry": { "type": "Point", "coordinates": [2.875, 47.509722] },
+        "properties": {
+          "site_id": "FRA-BELLEVILLE-01",
+          "nom_site": "Centrale nucléaire de Belleville",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-BLAYAIS-01",
+        "geometry": { "type": "Point", "coordinates": [-0.690833, 45.256111] },
+        "properties": {
+          "site_id": "FRA-BLAYAIS-01",
+          "nom_site": "Centrale nucléaire du Blayais",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-BUGEY-01",
+        "geometry": { "type": "Point", "coordinates": [5.270833, 45.798333] },
+        "properties": {
+          "site_id": "FRA-BUGEY-01",
+          "nom_site": "Centrale nucléaire du Bugey",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-CATTENOM-01",
+        "geometry": { "type": "Point", "coordinates": [6.218056, 49.415833] },
+        "properties": {
+          "site_id": "FRA-CATTENOM-01",
+          "nom_site": "Centrale nucléaire de Cattenom",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-CHINON-01",
+        "geometry": { "type": "Point", "coordinates": [0.170278, 47.230556] },
+        "properties": {
+          "site_id": "FRA-CHINON-01",
+          "nom_site": "Centrale nucléaire de Chinon",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-CHOOZ-B-01",
+        "geometry": { "type": "Point", "coordinates": [4.790556, 50.09] },
+        "properties": {
+          "site_id": "FRA-CHOOZ-B-01",
+          "nom_site": "Centrale nucléaire de Chooz-B",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-CIVAUX-01",
+        "geometry": { "type": "Point", "coordinates": [0.652778, 46.456667] },
+        "properties": {
+          "site_id": "FRA-CIVAUX-01",
+          "nom_site": "Centrale nucléaire de Civaux",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-CRUAS-MEYSSE-01",
+        "geometry": { "type": "Point", "coordinates": [4.756667, 44.633056] },
+        "properties": {
+          "site_id": "FRA-CRUAS-MEYSSE-01",
+          "nom_site": "Centrale nucléaire de Cruas-Meysse",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-DAMPIERRE-01",
+        "geometry": { "type": "Point", "coordinates": [2.516667, 47.733056] },
+        "properties": {
+          "site_id": "FRA-DAMPIERRE-01",
+          "nom_site": "Centrale nucléaire de Dampierre",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-FLAMANVILLE-01",
+        "geometry": { "type": "Point", "coordinates": [-1.881667, 49.536389] },
+        "properties": {
+          "site_id": "FRA-FLAMANVILLE-01",
+          "nom_site": "Centrale nucléaire de Flamanville",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-GOLFECH-01",
+        "geometry": { "type": "Point", "coordinates": [0.845278, 44.106667] },
+        "properties": {
+          "site_id": "FRA-GOLFECH-01",
+          "nom_site": "Centrale nucléaire de Golfech",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-GRAVELINES-01",
+        "geometry": { "type": "Point", "coordinates": [2.135, 51.014444] },
+        "properties": {
+          "site_id": "FRA-GRAVELINES-01",
+          "nom_site": "Centrale nucléaire de Gravelines",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-NOGENT-01",
+        "geometry": { "type": "Point", "coordinates": [3.517778, 48.515278] },
+        "properties": {
+          "site_id": "FRA-NOGENT-01",
+          "nom_site": "Centrale nucléaire de Nogent",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-PALUEL-01",
+        "geometry": { "type": "Point", "coordinates": [0.635278, 49.857778] },
+        "properties": {
+          "site_id": "FRA-PALUEL-01",
+          "nom_site": "Centrale nucléaire de Paluel",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-PENLY-01",
+        "geometry": { "type": "Point", "coordinates": [1.211944, 49.976111] },
+        "properties": {
+          "site_id": "FRA-PENLY-01",
+          "nom_site": "Centrale nucléaire de Penly",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-SAINT-ALBAN-01",
+        "geometry": { "type": "Point", "coordinates": [4.755278, 45.404444] },
+        "properties": {
+          "site_id": "FRA-SAINT-ALBAN-01",
+          "nom_site": "Centrale nucléaire de Saint-Alban",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-SAINT-LAURENT-01",
+        "geometry": { "type": "Point", "coordinates": [1.583611, 47.723889] },
+        "properties": {
+          "site_id": "FRA-SAINT-LAURENT-01",
+          "nom_site": "Centrale nucléaire de Saint-Laurent",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "SITE-FRA-TRICASTIN-01",
+        "geometry": { "type": "Point", "coordinates": [4.731389, 44.330833] },
+        "properties": {
+          "site_id": "FRA-TRICASTIN-01",
+          "nom_site": "Centrale nucléaire du Tricastin",
+          "type_site": "Centrale",
+          "operateur": "EDF",
+          "pays": "FR",
+          "actif": true
+        }
+    }
+    ]
+  }
+  

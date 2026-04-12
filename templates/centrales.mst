@@ -1,0 +1,4 @@
+<div class="centrales-popup">
+  <h3>{{nom_site}}</h3>
+  <p><strong>Nombre total d'incidents :</strong> {{nombre_total_incidents}}</p>
+</div>

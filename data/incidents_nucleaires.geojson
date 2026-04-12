@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.756666666666667,
+          44.63305555555556
+        ]
+      },
+      "properties": {
+        "id": "2025-09-001",
+        "date_releve": "2026-04-12",
+        "mois_reference": "2025-09",
+        "nom_site": "Cruas",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "date_incident": "2026-02-07",
+        "date_declaration": "2026-02-18",
+        "date_publication": "2026-03-02",
+        "annee_publication": "2026",
+        "mois_publication": "2026-03",
+        "description": "Dépassement de la durée d'indisponibilité, fixée par les règles générales d'exploitation, d'une batterie de secours des tableaux électriques du réacteur 3",
+        "hyperlien": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/depassement-de-la-duree-d-indisponibilite-d-une-batterie-de-secours-des-tableaux-electriques"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.01444444444444
+        ]
+      },
+      "properties": {
+        "id": "2025-09-002",
+        "date_releve": "2026-04-12",
+        "mois_reference": "2025-09",
+        "nom_site": "Gravelines",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "date_incident": "2025-12-23",
+        "date_declaration": "2026-02-24",
+        "date_publication": "2026-03-11",
+        "annee_publication": "2026",
+        "mois_publication": "2026-03",
+        "description": "Détection tardive de l'indisponibilité d'une pompe du système d'alimentation de secours des générateurs de vapeur du réacteur 1 de la centrale nucléaire de Gravelines",
+        "hyperlien": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/detection-tardive-de-l-indisponibilite-d-une-pompe-du-systeme-d-alimentation-de-secours-des-gv2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6527777777777778,
+          46.45666666666667
+        ]
+      },
+      "properties": {
+        "id": "2025-09-003",
+        "date_releve": "2026-04-12",
+        "mois_reference": "2025-09",
+        "nom_site": "Civaux",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "date_incident": "2026-03-03",
+        "date_declaration": "2026-03-06",
+        "date_publication": "2026-03-13",
+        "annee_publication": "2026",
+        "mois_publication": "2026-03",
+        "description": "Détection tardive de l'indisponibilité d'une pompe du circuit d'injection de sécurité (RIS)",
+        "hyperlien": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/detection-tardive-de-l-indisponibilite-d-une-pompe-du-circuit-d-injection-de-securite-ris3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.731388888888889,
+          44.33083333333334
+        ]
+      },
+      "properties": {
+        "date_releve": "2026-04-12",
+        "mois_reference": "2026-03",
+        "nom_site": "Tricastin",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "date_incident": "2026-03-06",
+        "date_declaration": "2026-03-06",
+        "date_publication": "2026-03-18",
+        "annee_publication": "2026",
+        "mois_publication": "2026-03",
+        "description": "Incident lors des opérations de déchargement du combustible du réacteur 1",
+        "hyperlien": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/incident-lors-des-operations-de-dechargement-du-combustible-du-reacteur-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.517777777777778,
+          48.515277777777776
+        ]
+      },
+      "properties": {
+        "id": "2025-08-001",
+        "date_releve": "2026-04-12",
+        "mois_reference": "2025-08",
+        "nom_site": "Nogent",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "date_incident": "2026-03-05",
+        "date_declaration": "2026-03-11",
+        "date_publication": "2026-03-20",
+        "annee_publication": "2026",
+        "mois_publication": "2026-03",
+        "description": "Détection tardive du non-respect d'une prescription des règles générales d'exploitation",
+        "hyperlien": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/detection-tardive-du-non-respect-d-une-prescription-des-regles-generales-d-exploitation3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.270833333333333,
+          45.79833333333333
+        ]
+      },
+      "properties": {
+        "id": "2025-08-002",
+        "date_releve": "2026-04-12",
+        "mois_reference": "2025-08",
+        "nom_site": "Bugey",
+        "niveau_ines": 1,
+        "niveau_ines_label": "Anomalie",
+        "date_incident": "2026-03-18",
+        "date_declaration": "2026-03-20",
+        "date_publication": "2026-03-25",
+        "annee_publication": "2026",
+        "mois_publication": "2026-03",
+        "description": "Indisponibilité prolongée du dispositif ultime d'aspersion de l'enceinte EAS-u du réacteur 3",
+        "hyperlien": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilite-prolongee-du-dispositif-ultime-d-aspersion-de-l-enceinte-eas-u-du-reacteur-3"
+      }
+    }
+  ]
+}

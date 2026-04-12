@@ -1,0 +1,31 @@
+{{#features}}
+<li class="item" style="width:100%;">
+  <div class="titleComponent">
+    <h3>{{nom_site}}</h3>
+    <p style="margin-top:4px;">
+      <b>{{type_evenement}}</b>
+      {{#niveau_ines}} — INES: <b>{{niveau_ines}}</b>{{/niveau_ines}}
+      {{^niveau_ines}} — INES: <b>NC</b>{{/niveau_ines}}
+      — <b>{{statut}}</b>
+    </p>
+  </div>
+
+  <div>
+    {{#date_debut}}<p><b>Date début :</b> {{date_debut}}</p>{{/date_debut}}
+    {{#date_incident}}<p><b>Incident / détection :</b> {{date_incident}}</p>{{/date_incident}}
+    {{#date_declaration}}<p><b>Déclaration EDF :</b> {{date_declaration}}</p>{{/date_declaration}}
+    {{#date_publication}}<p><b>Publication / MAJ ASNR :</b> {{date_publication}}</p>{{/date_publication}}
+    {{#date_fin}}<p><b>Date fin :</b> {{date_fin}}</p>{{/date_fin}}
+  </div>
+
+  <div>
+    {{#titre}}<p><b>Titre :</b> {{titre}}</p>{{/titre}}
+    <p><b>Description :</b> {{description}}</p>
+    {{#notes}}<p><b>Notes :</b> {{notes}}</p>{{/notes}}
+    <p><b>Source :</b> {{source}}</p>
+    {{#url_source}}
+      <p><a href="{{url_source}}" target="_blank" rel="noopener">Voir la source</a></p>
+    {{/url_source}}
+  </div>
+</li>
+{{/features}}

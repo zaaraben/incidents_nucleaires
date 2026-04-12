@@ -1,60 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application id="incidents_nucleaires" 
-    title="Alertes et incidents nucléaires" 
-    mouseposition="false" 
-    logo="apps/incidents_nucleaires/icon_map.png" help="apps/incidents_nucleaires/help.html" 
-    measuretools="true" exportpng="true" geoloc="true"
-    style="apps/incidents_nucleaires/css/theme.css" 
-    templaterightinfopanel="brut"
-    togglealllayersfromtheme="true"/>
-    <mapoptions maxzoom="19" projection="EPSG:3857" center="261845, 6250566" zoom="5" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
-  
+    <application id="incidents_nucleaires"
+        title="Incidents nucléaires déclarés"
+        mouseposition="false"
+        logo="apps/incidents_nucleaires/icon_map.png"
+        help="apps/incidents_nucleaires/help.html"
+        measuretools="true"
+        exportpng="true"
+        geoloc="true"
+        style="apps/incidents_nucleaires/css/theme.css"
+        templaterightinfopanel="brut"
+        togglealllayersfromtheme="true"/>
+
+    <mapoptions
+        maxzoom="19"
+        projection="EPSG:3857"
+        center="310640.0829509563, 5907053.545878422"
+        zoom="6"
+        projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
     <baselayers style="gallery">
-        <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
-            url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
-            visible="true" attribution="Map tiles by  &lt;a href='https://carto.com/attributions' target='_blank'>Carto &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
-    </baselayers>     
+        <baselayer
+            type="OSM"
+            id="positron"
+            label="Positron"
+            title="Carto"
+            thumbgallery="img/basemap/positron.png"
+            url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+            maxzoom="20"
+            visible="true"
+            attribution="Map tiles by &lt;a href='https://carto.com/attributions' target='_blank'>Carto&lt;/a>, under &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0&lt;/a>" />
+    </baselayers>
+
     <proxy url=""/>
-    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
-    <searchparameters bbox="false" localities="true" features="false" />   
-    <extensions>
-                <extension type="component" id="filter" path="apps/incidents_nucleaires/"/>
-    </extensions>
-    <themes>                  
-        <theme name="Incidents nucléaires" collapsed="true" id="incidents" icon="fas fa-exclamation-triangle">
+    <olscompletion
+        url="https://api-adresse.data.gouv.fr/search/"
+        type="ban"
+        attribution="La recherche d'adresse est un service proposé par la BAN"/>
+    <searchparameters bbox="false" localities="true" features="false" />
 
-  
+    <themes>
+        <theme name="Incidents nucléaires" collapsed="false" id="incidents" icon="fas fa-radiation">
 
-  <!-- ALERTES -->
-  <layer id="alertes_2025" name="Alertes / incidents (2025)"
-         visible="true"
-         expanded="false"
-         type="customlayer"
-         url="apps/incidents_nucleaires/customlayer/alertes_style.js"
-         legendurl="apps/incidents_nucleaires/img/legende2.png"
-         searchable="false" queryable="true"
-         tooltip="true"
-         tooltipcontent="{{nom_site}} — INES {{#niveau_ines}}{{niveau_ines}}{{/niveau_ines}}{{^niveau_ines}}NC{{/niveau_ines}}"
-         attribution="Relevés incidents nucléaires (2025)">
-    <template url="apps/incidents_nucleaires/templates/alertes.mst"></template>
-  </layer>
-<!-- SITES -->
-  <layer id="sites_nucleaires" name="Centrales nucléaires"
-         visible="true"
-         expanded="false"
-         type="customlayer"
-         url="apps/incidents_nucleaires/customlayer/sites_customlayer.js"
-         legendurl="apps/incidents_nucleaires/img/legende_centrales2.png"
-         vectorlegend="false"
-         searchable="false" queryable="true"
-         tooltip="true"
-         tooltipcontent="{{nom_site}}"
-         attribution="Référentiel sites">
-    <template url="apps/incidents_nucleaires/templates/sites.mst"></template>
-  </layer>
-</theme>
+            <layer id="centrales"
+                name="Centrales nucléaires"
+                visible="true"
+                type="customlayer"
+                url="apps/incidents_nucleaires/customlayer/centrales.js"
+                searchable="false"
+                queryable="true"
+                fields=""
+                aliases=""
+                infoformat="application/vnd.ogc.gml"
+                infopanel=""
+                featurecount="5"
+                tooltip="true"
+                tooltipcontent="{{nom_site}} — {{nombre_total_incidents}} incidents"
+                attribution="Sources : ASNR, EDF, référentiel local"
+                metadata=""
+                metadata-csw="">
+                <template url="apps/incidents_nucleaires/templates/centrales.mst"></template>
+            </layer>
 
+            <layer id="incidents_mois"
+                name="Incidents du mois"
+                visible="true"
+                type="customlayer"
+                url="apps/incidents_nucleaires/customlayer/incidents_mois.js"
+                searchable="false"
+                queryable="true"
+                fields=""
+                aliases=""
+                infoformat="application/vnd.ogc.gml"
+                infopanel=""
+                featurecount="10"
+                tooltip="true"
+                tooltipcontent="{{nom_site}} — INES {{niveau_ines}}"
+                attribution="Sources : ASNR, référentiel local"
+                metadata=""
+                metadata-csw="">
+                <template url="apps/incidents_nucleaires/templates/incidents_mois.mst"></template>
+            </layer>
 
+        </theme>
     </themes>
 </config>
