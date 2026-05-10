@@ -1057,6 +1057,23 @@ span.badge.counter-slide {
   display: block;
 }
 
+/* Bouton lien ASNR */
+.mv-btn-asnr {
+  display: inline-block;
+  padding: 7px 14px;
+  background-color: var(--mycolor);
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: opacity 0.2s;
+}
+
+.mv-btn-asnr:hover {
+  opacity: 0.8;
+}
+
 /* Cartes incidents dans le panneau centrale */
 .mv-inc-list {
   margin-top: 8px;
