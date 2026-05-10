@@ -5,102 +5,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aide — Incidents nucléaires</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.45; margin: 0; padding: 18px; color: #222; }
-    h1 { font-size: 20px; margin: 0 0 12px 0; }
-    h2 { font-size: 16px; margin: 18px 0 8px 0; }
-    p { margin: 8px 0; }
-    ul { margin: 8px 0 8px 18px; }
-    code, pre { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
-    .box { background: #fafafa; border: 1px solid #e6e6e6; border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
-    .legend { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 10px; }
-    .chip { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; border: 1px solid #ddd; background: #fff; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 0; padding: 16px; color: #222; font-size: 13px; }
+    h1 { font-size: 17px; margin: 0 0 16px 0; color: #24292f; }
+    h2 { font-size: 14px; margin: 16px 0 8px 0; color: #24292f; }
+    p  { margin: 6px 0; }
+    ul { margin: 6px 0 6px 18px; }
+    li { margin-bottom: 4px; }
     .k { font-weight: 700; }
-    .small { font-size: 13px; color: #444; }
-    .sep { height: 1px; background: #eee; margin: 16px 0; }
+    .small { font-size: 12px; color: #555; }
+    .chip { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px; border: 1px solid #ccc; background: #f5f5f5; }
+    .box { background: #fafafa; border: 1px solid #e6e6e6; border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
+    .sep { height: 1px; background: #eee; margin: 14px 0; }
+
+    /* ── Onglets ── */
+    .tabs { display: flex; gap: 4px; margin-bottom: 16px; border-bottom: 2px solid #e0e0e0; padding-bottom: 0; }
+    .tab-btn {
+      padding: 7px 14px;
+      border: none;
+      background: none;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #666;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      border-radius: 4px 4px 0 0;
+      transition: color 0.15s;
+    }
+    .tab-btn:hover { color: #24292f; }
+    .tab-btn.active { color: #24292f; border-bottom-color: #24292f; background: #f5f5f5; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── Légende visuelle ── */
+    .legend-row { display: flex; align-items: flex-start; gap: 12px; margin: 8px 0; }
+    .legend-icon { flex-shrink: 0; width: 32px; text-align: center; padding-top: 2px; }
+    svg.icon { overflow: visible; }
   </style>
 </head>
-
 <body>
+
   <h1>Aide — Carte des incidents nucléaires</h1>
 
-  <div class="box">
-    <p>
-      Cette carte recense les <span class="k">incidents</span> et <span class="k">alertes</span> signalés sur des sites nucléaires,
-      avec un <span class="k">historique par site</span> et un statut de suivi.
-    </p>
-    <p class="small">
-      Objectif : visualiser rapidement où se situent les événements, comprendre leur niveau et suivre leur évolution dans le temps.
-    </p>
-  </div>
+  <nav class="tabs">
+    <button class="tab-btn active" onclick="showTab('carte',this)">La carte</button>
+    <button class="tab-btn" onclick="showTab('fiches',this)">Les fiches</button>
+    <button class="tab-btn" onclick="showTab('legende',this)">Légende</button>
+    <button class="tab-btn" onclick="showTab('sources',this)">Sources</button>
+  </nav>
 
-  <h2>1) Comment utiliser la carte</h2>
-  <ul>
-    <li><span class="k">Zoom / déplacement</span> : molette du trackpad/souris, ou boutons + / −.</li>
-    <li><span class="k">Cliquer un point</span> : ouvre la fiche du site avec le détail de l’alerte (et l’historique s’il existe).</li>
-    <li><span class="k">Survol</span> (si activé) : affiche un résumé rapide dans une bulle.</li>
-    <li><span class="k">Recherche</span> (si disponible) : rechercher un site par nom.</li>
-  </ul>
-
-  <h2>2) Lecture des informations</h2>
-  <div class="box">
-    <p>Chaque alerte/incident est décrit par des champs du type :</p>
+  <!-- ── Onglet 1 : La carte ── -->
+  <div id="tab-carte" class="tab-panel active">
+    <h2>Navigation</h2>
     <ul>
-      <li><span class="k">Nom du site</span> (ex: centrale, installation, site de stockage…)</li>
-      <li><span class="k">Type d’alerte</span> (ex: anomalie, incident, exercice, information…)</li>
-      <li><span class="k">Niveau INES</span> (quand il est connu)</li>
-      <li><span class="k">Priorité</span> / <span class="k">niveau d’alerte</span> (faible → critique)</li>
-      <li><span class="k">Statut</span> (en cours, clôturé…)</li>
-      <li><span class="k">Date</span> de l’alerte (et éventuellement date de clôture)</li>
-      <li><span class="k">Description</span> (résumé textuel)</li>
+      <li><span class="k">Zoom</span> : molette ou boutons + / −</li>
+      <li><span class="k">Déplacement</span> : cliquer-glisser sur la carte</li>
+      <li><span class="k">Cliquer une centrale</span> : ouvre la fiche détaillée dans le panneau latéral</li>
+      <li><span class="k">Survol</span> : affiche le nom de la centrale dans une bulle</li>
     </ul>
+
+    <h2>Filtrer les centrales</h2>
+    <div class="box">
+      <p>Un bouton <span class="k">filtre</span> (icône entonnoir rouge) est disponible dans la barre d'outils à droite.</p>
+      <ul>
+        <li><span class="k">Bouton inactif</span> : toutes les centrales sont affichées</li>
+        <li><span class="k">Bouton actif</span> : seules les centrales ayant eu au moins un incident sur la période sont affichées</li>
+      </ul>
+    </div>
+
+    <h2>Période affichée</h2>
     <p class="small">
-      Si une valeur est absente ou non communiquée, elle peut apparaître comme <span class="chip">NC</span>.
+      Les données correspondent aux incidents publiés sur une période définie, indiquée dans la fiche de chaque centrale.
+      Les centrales sans incident sur cette période restent visibles (cercles gris) mais peuvent en avoir sur d'autres périodes.
     </p>
   </div>
 
-  <h2>3) Légende (interprétation)</h2>
-  <p class="small">La légende exacte dépend du paramétrage de la carte. Exemple de lecture :</p>
-
-  <div class="legend">
+  <!-- ── Onglet 2 : Les fiches ── -->
+  <div id="tab-fiches" class="tab-panel">
+    <h2>Informations par centrale</h2>
     <div class="box">
-      <p><span class="k">Couleur / taille du point</span> : reflète généralement la sévérité (priorité ou niveau INES).</p>
-      <p class="small">Plus c’est “haut”, plus l’événement est important à traiter.</p>
+      <ul>
+        <li><span class="k">Incidents sur la période</span> : nombre d'incidents publiés pour la période affichée</li>
+        <li><span class="k">Total historique</span> : nombre total d'incidents depuis le début du référentiel</li>
+        <li><span class="k">Niveau INES max</span> : niveau le plus élevé parmi les incidents de la période</li>
+      </ul>
     </div>
-    <div class="box">
-      <p><span class="k">Forme alternative</span> (si utilisée) : peut indiquer une donnée manquante ou un cas particulier.</p>
-      <p class="small">Exemple : un symbole spécifique pour les sites dont l’information est <span class="chip">NC</span>.</p>
-    </div>
-  </div>
 
-  <h2>4) Historique des alertes par site</h2>
-  <div class="box">
-    <p>
-      Lorsqu’un site a plusieurs événements, la fiche peut afficher un <span class="k">historique</span> (liste chronologique).
-    </p>
+    <h2>Liste des incidents</h2>
+    <p>Chaque incident de la période est affiché sous forme de carte avec :</p>
     <ul>
-      <li>Les événements sont en général triés du <span class="k">plus récent</span> au plus ancien.</li>
-      <li>Chaque entrée reprend : date, type, niveau, statut, description.</li>
-      <li>Un site peut avoir des événements “clôturés” et d’autres “en cours”.</li>
+      <li><span class="k">Niveau INES</span> et date de publication</li>
+      <li><span class="k">Description</span> de l'événement (quand disponible)</li>
+      <li><span class="k">Lien "Voir la fiche"</span> vers la page ASNR de l'incident (quand disponible)</li>
     </ul>
-  </div>
+    <p>La bordure colorée à gauche de chaque carte indique le niveau INES de l'incident.</p>
 
-  <h2>5) Statuts et cas “NC”</h2>
-  <ul>
-    <li><span class="k">En cours</span> : l’événement est suivi, l’information peut évoluer.</li>
-    <li><span class="k">Clôturé</span> : l’événement est terminé / stabilisé / archivé.</li>
-    <li><span class="k">NC</span> : donnée non communiquée (ou indisponible dans la source).</li>
-  </ul>
+    <div class="sep"></div>
 
-  <div class="sep"></div>
-
-  <h2>6) Qualité des données & limites</h2>
-  <div class="box">
+    <h2>Lien ASNR</h2>
     <p class="small">
-      Cette carte dépend des données publiées par les sources utilisées. Certaines valeurs peuvent être mises à jour après coup
-      (ex: niveau INES ou statut). Les champs <span class="chip">NC</span> peuvent être temporaires ou permanents selon la publication.
+      En bas de chaque fiche, un lien <span class="k">Voir tous les incidents sur le site ASNR</span> renvoie
+      vers la page officielle de la centrale sur le site de l'Autorité de sûreté nucléaire et de radioprotection.
     </p>
   </div>
 
+  <!-- ── Onglet 3 : Légende ── -->
+  <div id="tab-legende" class="tab-panel">
+    <h2>Centrales avec incidents sur la période</h2>
+    <p class="small">Représentées par un <span class="k">triangle</span>.</p>
+
+    <div class="legend-row">
+      <div class="legend-icon">
+        <svg class="icon" width="22" height="18" viewBox="0 0 22 18">
+          <polygon points="11,1 3,17 19,17" fill="#A98A36" stroke="#1a1a1a" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div>
+        <p><span class="k">INES 1</span> — Anomalie</p>
+        <p class="small">Couleur ambrée</p>
+      </div>
+    </div>
+
+    <div class="legend-row">
+      <div class="legend-icon">
+        <svg class="icon" width="22" height="18" viewBox="0 0 22 18">
+          <polygon points="11,1 3,17 19,17" fill="#B43C00" stroke="#1a1a1a" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div>
+        <p><span class="k">INES 2+</span> — Incident / accident</p>
+        <p class="small">Couleur orange foncé</p>
+      </div>
+    </div>
+
+    <div class="box" style="margin-top:10px;">
+      <p><span class="k">Taille du triangle</span> : proportionnelle au nombre d'incidents sur la période — plus il y en a, plus le triangle est grand.</p>
+    </div>
+
+    <div class="sep"></div>
+
+    <h2>Centrales sans incident sur la période</h2>
+    <p class="small">Représentées par un <span class="k">cercle gris</span>.</p>
+
+    <div class="legend-row">
+      <div class="legend-icon">
+        <svg class="icon" width="22" height="22" viewBox="0 0 22 22">
+          <circle cx="11" cy="11" r="9" fill="#A0A0A0" fill-opacity="0.65" stroke="#646464" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div>
+        <p>Aucun incident publié sur la période affichée</p>
+        <p class="small"><span class="k">Taille du cercle</span> : proportionnelle au total d'incidents historiques de la centrale</p>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <h2>Échelle INES</h2>
+    <div class="box">
+      <p class="small">L'échelle INES (International Nuclear and Radiological Event Scale) classe les événements de 0 à 7 :</p>
+      <ul class="small">
+        <li><span class="k">0</span> — Écart (sans importance pour la sûreté)</li>
+        <li><span class="k">1</span> — Anomalie</li>
+        <li><span class="k">2</span> — Incident</li>
+        <li><span class="k">3</span> — Incident grave</li>
+        <li><span class="k">4–7</span> — Accidents (de local à majeur)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── Onglet 4 : Sources ── -->
+  <div id="tab-sources" class="tab-panel">
+    <h2>Source des données</h2>
+    <div class="box">
+      <p>Les données proviennent du site de l'<span class="k">Autorité de sûreté nucléaire et de radioprotection (ASNR)</span>.</p>
+      <p class="small">Les incidents sont publiés par l'ASNR après déclaration obligatoire par les exploitants.</p>
+    </div>
+
+    <h2>Mise à jour</h2>
+    <p class="small">
+      Les données sont mises à jour manuellement. La date de dernière mise à jour est indiquée
+      en bas de chaque fiche centrale.
+    </p>
+
+    <h2>Limites</h2>
+    <ul class="small">
+      <li>Certains champs (dates, description) peuvent être absents si non communiqués par l'exploitant.</li>
+      <li>Le niveau INES peut être révisé après publication.</li>
+      <li>Les valeurs <span class="chip">NC</span> indiquent une donnée non communiquée ou indisponible.</li>
+      <li>Cette carte est un outil de visualisation citoyenne et ne se substitue pas aux sources officielles.</li>
+    </ul>
+
+    <div class="sep"></div>
+
+    <p class="small" style="color:#999;">
+      Carte réalisée avec <a href="https://mviewer.github.io" target="_blank" rel="noopener" style="color:#999;">mviewer</a>.
+    </p>
+  </div>
+
+  <script>
+    function showTab(id, btn) {
+      document.querySelectorAll(".tab-panel").forEach(function(p) { p.classList.remove("active"); });
+      document.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
+      document.getElementById("tab-" + id).classList.add("active");
+      btn.classList.add("active");
+    }
+  </script>
 
 </body>
 </html>
