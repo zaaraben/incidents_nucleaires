@@ -1057,6 +1057,65 @@ span.badge.counter-slide {
   display: block;
 }
 
+/* Cartes incidents dans le panneau centrale */
+.mv-inc-list {
+  margin-top: 8px;
+}
+
+.mv-inc-card {
+  border-left: 3px solid #aaa;
+  padding: 5px 8px;
+  margin-bottom: 6px;
+  background: #fafafa;
+  border-radius: 0 4px 4px 0;
+  font-size: 12px;
+}
+
+.mv-inc-card.mv-inc-nc   { border-left-color: #aaaaaa; }
+.mv-inc-card.mv-inc-1    { border-left-color: #A98A36; }
+.mv-inc-card.mv-inc-high { border-left-color: #B43C00; }
+
+.mv-inc-ines {
+  font-weight: 600;
+  color: var(--mycolor);
+}
+
+.mv-inc-date {
+  color: #666;
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+.mv-inc-desc {
+  margin: 4px 0 2px;
+  color: #444;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.mv-inc-link {
+  font-size: 11px;
+  color: #A98A36;
+  text-decoration: none;
+}
+
+.mv-inc-link:hover {
+  text-decoration: underline;
+}
+
+.mv-centrales-no-incident {
+  color: #888;
+  font-style: italic;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+/* Bouton toggle centrales avec incidents */
+#btn-centrales-filter.active {
+  background-color: #ff6b6b !important;
+  color: white !important;
+}
+
 /* Hide the entire legend block if it's empty for 'sites_nucleaires' */
 .mv-layer-details[data-layerid="sites_nucleaires"] .layerdisplay-legend:empty {
   display: none !important;

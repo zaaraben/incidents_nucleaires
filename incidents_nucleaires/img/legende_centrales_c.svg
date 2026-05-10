@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="278" style="font-family: Arial, sans-serif;">
+
+  <!-- ── COULEUR ── -->
+  <text x="6" y="16" font-size="11" font-weight="bold" fill="#333">Couleur — niveau INES max</text>
+
+  <!-- INES 1 -->
+  <polygon points="18,30 10,45 26,45" fill="#A98A36" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="34" y="41" font-size="10" fill="#333">INES 1</text>
+
+  <!-- INES 2+ -->
+  <polygon points="18,57 10,72 26,72" fill="#B43C00" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="34" y="68" font-size="10" fill="#333">INES 2+</text>
+
+  <line x1="6" y1="84" x2="224" y2="84" stroke="#ddd" stroke-width="1"/>
+
+  <!-- ── TAILLE (incidents sur la période) ── -->
+  <text x="6" y="100" font-size="11" font-weight="bold" fill="#333">Taille — incidents sur la période</text>
+
+  <!-- Grand cercle en premier (derrière) -->
+  <circle cx="72" cy="132" r="16" fill="#A98A36" fill-opacity="0.45" stroke="#7a6428" stroke-width="1.5"/>
+  <!-- Moyen -->
+  <circle cx="52" cy="132" r="12" fill="#A98A36" fill-opacity="0.60" stroke="#7a6428" stroke-width="1.5"/>
+  <!-- Petit (devant) -->
+  <circle cx="34" cy="132" r="8"  fill="#A98A36" fill-opacity="0.85" stroke="#7a6428" stroke-width="1.5"/>
+
+  <text x="34" y="149" font-size="8" text-anchor="middle" fill="#555">1–2</text>
+  <text x="52" y="153" font-size="8" text-anchor="middle" fill="#555">3–5</text>
+  <text x="72" y="157" font-size="8" text-anchor="middle" fill="#555">6+</text>
+  <text x="98" y="133" font-size="8" fill="#888" font-style="italic">incidents</text>
+
+  <line x1="6" y1="170" x2="224" y2="170" stroke="#ddd" stroke-width="1"/>
+
+  <!-- ── CERCLES GRIS (aucun incident sur la période) ── -->
+  <text x="6" y="186" font-size="11" font-weight="bold" fill="#333">Aucun incident sur la période</text>
+  <text x="6" y="199" font-size="9" fill="#666" font-style="italic">Taille = total d'incidents historiques</text>
+
+  <!-- Grand cercle derrière -->
+  <circle cx="64" cy="237" r="22" fill="#A0A0A0" fill-opacity="0.50" stroke="#646464" stroke-width="1.5"/>
+  <!-- Petit cercle devant -->
+  <circle cx="36" cy="237" r="11" fill="#A0A0A0" fill-opacity="0.75" stroke="#646464" stroke-width="1.5"/>
+
+  <text x="36" y="255" font-size="8" text-anchor="middle" fill="#555">faible</text>
+  <text x="64" y="267" font-size="8" text-anchor="middle" fill="#555">élevé</text>
+
+</svg>

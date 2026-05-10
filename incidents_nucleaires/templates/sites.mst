@@ -5,14 +5,21 @@
   </div>
 
   <div>
-    
-    {{#operateur}}<p><b>Opérateur :</b> {{operateur}}</p>{{/operateur}}
-    {{#type_site}}<p><b>Type :</b> {{type_site}}</p>{{/type_site}}
-    {{#commune}}<p><b>Commune :</b> {{commune}}</p>{{/commune}}
-    {{#departement}}<p><b>Département :</b> {{departement}}</p>{{/departement}}
-    {{#region}}<p><b>Région :</b> {{region}}</p>{{/region}}
-    {{#actif}}<p><b>Statut :</b> Actif</p>{{/actif}}
-    {{^actif}}<p><b>Statut :</b> Inactif</p>{{/actif}}
+    <p><b>Incidents publiés le dernier mois :</b> {{nb_incidents_affiches}}</p>
+    <p><b>Total incidents (historique) :</b> {{nb_total_incidents}}</p>
+    {{#nb_incidents_affiches}}
+    <p><b>Niveau INES max sur le dernier mois :</b> {{ines_max}}</p>
+    {{/nb_incidents_affiches}}
   </div>
+
+  {{{incidents_tableau}}}
+
+  {{#url_asnr}}
+  <p style="margin-top:10px;">
+    <a href="{{url_asnr}}" target="_blank" rel="noopener">Voir tous les incidents de la centrale sur le site ASNR →</a>
+  </p>
+  {{/url_asnr}}
+
+  <p style="margin-top:10px;font-size:11px;color:#999;">Mise à jour : 09/05/2026</p>
 </li>
 {{/features}}

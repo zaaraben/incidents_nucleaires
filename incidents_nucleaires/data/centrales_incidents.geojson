@@ -1,0 +1,388 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": "2026-05-10T11:16:10",
+    "nb_sites": 18,
+    "nb_incidents_affiches": 4,
+    "nb_total_incidents": 2973
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.270833,
+          45.798333
+        ]
+      },
+      "properties": {
+        "nom_site": "Bugey",
+        "nb_incidents_affiches": 2,
+        "nb_total_incidents": 195,
+        "ines_max": 1,
+        "a_des_incidents": true,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-du-bugey/avis-d-incidents#active-tab",
+        "incidents": [
+          {
+            "niveau_ines": 1,
+            "date_incident": null,
+            "date_declaration": "2026-04-20",
+            "date_publication": "2026-04-22",
+            "description": "Indisponibilité prolongée d’un groupe électrogène de secours",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilite-prolongee-d-un-groupe-electrogene-de-secours"
+          },
+          {
+            "niveau_ines": 1,
+            "date_incident": null,
+            "date_declaration": "2026-03-26",
+            "date_publication": "2026-04-08",
+            "description": "Indisponibilité prolongée des groupes électrogènes à moteur diesel d’ultime secours",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilite-prolongee-des-groupes-electrogenes-a-moteur-diesel-d-ultime-secours"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.881667,
+          49.536389
+        ]
+      },
+      "properties": {
+        "nom_site": "Flamanville",
+        "nb_incidents_affiches": 1,
+        "nb_total_incidents": 152,
+        "ines_max": 1,
+        "a_des_incidents": true,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/normandie/centrale-nucleaire-de-flamanville/avis-d-incidents#active-tab",
+        "incidents": [
+          {
+            "niveau_ines": 1,
+            "date_incident": null,
+            "date_declaration": "2026-03-24",
+            "date_publication": "2026-04-04",
+            "description": "Indisponibilités des groupes électrogènes de secours à moteur diesel",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilites-des-groupes-electrogenes-de-secours-a-moteur-diesel"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.690833,
+          45.256111
+        ]
+      },
+      "properties": {
+        "nom_site": "Blayais",
+        "nb_incidents_affiches": 1,
+        "nb_total_incidents": 151,
+        "ines_max": 1,
+        "a_des_incidents": true,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/nouvelle-aquitaine/centrale-nucleaire-du-blayais/avis-d-incidents#active-tab",
+        "incidents": [
+          {
+            "niveau_ines": 1,
+            "date_incident": null,
+            "date_declaration": "2026-01-27",
+            "date_publication": "2026-04-08",
+            "description": "Levée des équipements internes de la cuve avec une grappe accrochée",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/levee-des-equipements-internes-de-la-cuve-avec-une-grappe-accrochee"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.875,
+          47.509722
+        ]
+      },
+      "properties": {
+        "nom_site": "Belleville",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 138,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/centre-val-de-loire/centrale-nucleaire-de-belleville-sur-loire/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.218056,
+          49.415833
+        ]
+      },
+      "properties": {
+        "nom_site": "Cattenom",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 213,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/grand-est/centrale-nucleaire-de-cattenom/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.170278,
+          47.230556
+        ]
+      },
+      "properties": {
+        "nom_site": "Chinon B",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 190,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/centre-val-de-loire/centrale-nucleaire-de-chinon-b/avis-d-incidents#active-tab`",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.790556,
+          50.09
+        ]
+      },
+      "properties": {
+        "nom_site": "Chooz B",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 118,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/grand-est/centrale-nucleaire-de-chooz-b/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.652778,
+          46.456667
+        ]
+      },
+      "properties": {
+        "nom_site": "Civaux",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 132,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/nouvelle-aquitaine/centrale-nucleaire-de-civaux/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.756667,
+          44.633056
+        ]
+      },
+      "properties": {
+        "nom_site": "Cruas",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 243,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-de-cruas-meysse/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.516667,
+          47.733056
+        ]
+      },
+      "properties": {
+        "nom_site": "Dampierre",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 158,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/centre-val-de-loire/centrale-nucleaire-de-dampierre-en-burly/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.845278,
+          44.106667
+        ]
+      },
+      "properties": {
+        "nom_site": "Golfech",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 92,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/occitanie/centrale-nucleaire-de-golfech/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.135,
+          51.014444
+        ]
+      },
+      "properties": {
+        "nom_site": "Gravelines",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 292,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/hauts-de-france/centrale-nucleaire-de-gravelines/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.517778,
+          48.515278
+        ]
+      },
+      "properties": {
+        "nom_site": "Nogent",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 122,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/grand-est/centrale-nucleaire-de-nogent-sur-seine/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.635278,
+          49.857778
+        ]
+      },
+      "properties": {
+        "nom_site": "Paluel",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 206,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/normandie/centrale-nucleaire-de-paluel/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.211944,
+          49.976111
+        ]
+      },
+      "properties": {
+        "nom_site": "Penly",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 82,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/normandie/centrale-nucleaire-de-penly/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.755278,
+          45.404444
+        ]
+      },
+      "properties": {
+        "nom_site": "Saint-Alban",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 103,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-de-saint-alban/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.583611,
+          47.723889
+        ]
+      },
+      "properties": {
+        "nom_site": "Saint-Laurent",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 93,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/centre-val-de-loire/centrale-nucleaire-de-saint-laurent-des-eaux/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.731389,
+          44.330833
+        ]
+      },
+      "properties": {
+        "nom_site": "Tricastin",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 293,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-du-tricastin/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    }
+  ]
+}
