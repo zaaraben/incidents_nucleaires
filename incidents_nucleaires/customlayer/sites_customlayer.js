@@ -17,29 +17,31 @@ function centralStyleFn(feature) {
     return new ol.style.Style({});
   }
 
+  var nbTotal = feature.get("nb_total_incidents") || 0;
+  var radiusTotal = Math.max(8, Math.min(Math.round(nbTotal / 10), 25));
+  var circleStyle = new ol.style.Style({
+    image: new ol.style.Circle({
+      radius: radiusTotal,
+      fill: new ol.style.Fill({ color: "rgba(160,160,160,0.65)" }),
+      stroke: new ol.style.Stroke({ color: "rgba(100,100,100,0.7)", width: 1 })
+    })
+  });
+
   if (nbIncidents === 0) {
-    var nbTotal = feature.get("nb_total_incidents") || 0;
-    var radiusTotal = Math.max(8, Math.min(Math.round(nbTotal / 10), 25));
-    return new ol.style.Style({
-      image: new ol.style.Circle({
-        radius: radiusTotal,
-        fill: new ol.style.Fill({ color: "rgba(160,160,160,0.65)" }),
-        stroke: new ol.style.Stroke({ color: "rgba(100,100,100,0.7)", width: 1 })
-      })
-    });
+    return circleStyle;
   }
 
-  var radius = Math.min(8 + nbIncidents, 20);
-
-  return new ol.style.Style({
+  var triangleStyle = new ol.style.Style({
     image: new ol.style.RegularShape({
       points: 3,
-      radius: radius,
+      radius: 16,
       rotation: 0,
       fill: new ol.style.Fill({ color: _centralColor(nbIncidents, inesMax) }),
       stroke: new ol.style.Stroke({ color: "rgba(0,0,0,0.9)", width: 2 })
     })
   });
+
+  return [circleStyle, triangleStyle];
 }
 
 function centralesToggleFilter() {

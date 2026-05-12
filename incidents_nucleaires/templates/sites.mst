@@ -16,7 +16,7 @@
 
   {{#url_asnr}}
   <p style="margin-top:12px;">
-    <a class="mv-btn-asnr" href="{{url_asnr}}" target="_blank" rel="noopener">Voir tous les incidents sur le site ASNR →</a>
+    <a class="mv-btn-asnr" href="{{url_asnr}}" target="_blank" rel="noopener">Voir tous les incidents de la centrale sur le site ASNR →</a>
   </p>
   {{/url_asnr}}
 

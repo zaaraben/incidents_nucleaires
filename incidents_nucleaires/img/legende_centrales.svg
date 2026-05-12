@@ -1,109 +1,102 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 350 278" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-    <g transform="matrix(1,0,0,1,32.7699,20.7798)">
-        <text x="0px" y="0px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:11px;fill:rgb(51,51,51);">Couleur — niveau INES max</text>
-    </g>
-    <g transform="matrix(1.47706,0,0,1,14.1376,47)">
-        <path d="M6,84L224,84" style="fill:none;fill-rule:nonzero;stroke:rgb(221,221,221);stroke-width:1px;"/>
-    </g>
-    <g transform="matrix(1,0,0,1,34.189,145)">
-        <g transform="matrix(11,0,0,11,231.247,0)">
+<svg width="100%" height="100%" viewBox="0 0 328 213" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,-20.3998,-12.6318)">
+        <g transform="matrix(1,0,0,1,32.7699,20.7798)">
+            <text x="0px" y="0px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:11px;fill:rgb(51,51,51);">Couleur — niveau INES max</text>
         </g>
-        <text x="0px" y="0px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:11px;fill:rgb(51,51,51);">Nombre d&apos;incidents déclarés le dernier mois</text>
-    </g>
-    <g transform="matrix(1,0,0,1,77.2231,159.18)">
-        <text x="-6.674px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">1–2</text>
-    </g>
-    <g transform="matrix(1,0,0,1,37.8105,99.5078)">
-        <path d="M20,151L68,151" style="fill:none;stroke:rgb(100,100,100);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(1,0,0,1,37.8105,77.5078)">
-        <path d="M20,151L68,151" style="fill:none;stroke:rgb(100,100,100);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(1,0,0,1,81.5708,189.18)">
-        <text x="-11.232px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">6 ou +</text>
-    </g>
-    <g transform="matrix(1.46789,0,0,1,15.1927,34)">
-        <path d="M6,170L224,170" style="fill:none;fill-rule:nonzero;stroke:rgb(221,221,221);stroke-width:1px;"/>
-    </g>
-    <g transform="matrix(1,0,0,1,37.4346,218)">
-        <g transform="matrix(11,0,0,11,192.065,0)">
+        <g transform="matrix(1.47706,0,0,1,14.1376,46)">
+            <path d="M6,84L224,84" style="fill:none;fill-rule:nonzero;stroke:rgb(221,221,221);stroke-width:1px;"/>
         </g>
-        <text x="0px" y="0px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:11px;fill:rgb(51,51,51);">Nombre total d&apos;incidents (historique)</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-6.18945,13.5078)">
-        <circle cx="64" cy="237" r="22" style="fill:rgb(160,160,160);fill-opacity:0.5;stroke:rgb(100,100,100);stroke-width:1.5px;"/>
-    </g>
-    <g transform="matrix(1,0,0,1,21.8105,24.5078)">
-        <circle cx="36" cy="237" r="11" style="fill:rgb(160,160,160);fill-opacity:0.75;stroke:rgb(100,100,100);stroke-width:1.5px;"/>
-    </g>
-    <g transform="matrix(1,0,0,1,117.596,252.508)">
-        <text x="-9.563px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">faible</text>
-    </g>
-    <g transform="matrix(1,0,0,1,117.844,231.359)">
-        <text x="-9.563px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">élevé</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1717.68)">
-        <g transform="matrix(10,0,0,10,1106.66,1756.12)">
+        <g transform="matrix(1,0,0,1,152.575,143.203)">
+            <g transform="matrix(8,0,0,8,108.508,0)">
+            </g>
+            <text x="-108.508px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">Centrale ayant eu au moins un incident publié le mois dernier</text>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 1 - anomalie</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1704.95)">
-        <g transform="matrix(10,0,0,10,1100.55,1756.12)">
+        <g transform="matrix(1,0,0,1,37.8105,49.5078)">
+            <path d="M20,151L68,151" style="fill:none;stroke:rgb(100,100,100);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 2 - incident</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1690.68)">
-        <g transform="matrix(10,0,0,10,1128.34,1756.12)">
+        <g transform="matrix(1,0,0,1,37.8105,27.5078)">
+            <path d="M20,151L68,151" style="fill:none;stroke:rgb(100,100,100);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 3 - incident grave</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1676.61)">
-        <g transform="matrix(10,0,0,10,1319.81,1756.12)">
+        <g transform="matrix(1.46789,0,0,1,15.1927,-16)">
+            <path d="M6,170L224,170" style="fill:none;fill-rule:nonzero;stroke:rgb(221,221,221);stroke-width:1px;"/>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 4 - accident n&apos;entrainant pas de risque important hors du site</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1662.95)">
-        <g transform="matrix(10,0,0,10,1248.97,1756.12)">
+        <g transform="matrix(1,0,0,1,37.4346,168)">
+            <g transform="matrix(11,0,0,11,192.065,0)">
+            </g>
+            <text x="0px" y="0px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:11px;fill:rgb(51,51,51);">Nombre total d&apos;incidents (historique)</text>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 5 - accident entrainant un risque hors du site</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1648.64)">
-        <g transform="matrix(10,0,0,10,1131.12,1756.12)">
+        <g transform="matrix(1,0,0,1,-6.18945,-36.4922)">
+            <circle cx="64" cy="237" r="22" style="fill:rgb(160,160,160);fill-opacity:0.5;stroke:rgb(100,100,100);stroke-width:1.5px;"/>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 6 - accident grave</text>
-    </g>
-    <g transform="matrix(1,0,0,1,-980.513,-1633.95)">
-        <g transform="matrix(10,0,0,10,1136.67,1756.12)">
+        <g transform="matrix(1,0,0,1,21.8105,-25.4922)">
+            <circle cx="36" cy="237" r="11" style="fill:rgb(160,160,160);fill-opacity:0.75;stroke:rgb(100,100,100);stroke-width:1.5px;"/>
         </g>
-        <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 7 - accident majeur</text>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-220.132)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(169,138,54);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.327591,0,0,0.300138,-274.738,-343.518)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(169,138,54);fill-opacity:0.78;stroke:rgb(122,100,40);stroke-width:2.07px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.114657,0,0,0.105048,-63.6994,-27.3143)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(169,138,54);stroke:rgb(122,100,40);stroke-width:5.91px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-206.095)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(74,66,128);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-192.059)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(113,148,188);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-178.022)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(15,109,114);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-163.985)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(141,185,89);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-150.054)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(230,166,79);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
-    </g>
-    <g transform="matrix(0.157993,0,0,0.144752,-123.322,-135.598)">
-        <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(152,41,57);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        <g transform="matrix(1,0,0,1,117.596,202.508)">
+            <text x="-9.563px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">faible</text>
+        </g>
+        <g transform="matrix(1,0,0,1,117.844,181.359)">
+            <text x="-9.563px" y="0px" style="font-family:'Helvetica';font-size:8px;fill:rgb(85,85,85);">élevé</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1717.68)">
+            <g transform="matrix(10,0,0,10,1106.66,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 1 - anomalie</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1704.95)">
+            <g transform="matrix(10,0,0,10,1100.55,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 2 - incident</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1690.68)">
+            <g transform="matrix(10,0,0,10,1128.34,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 3 - incident grave</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1676.61)">
+            <g transform="matrix(10,0,0,10,1319.81,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 4 - accident n&apos;entrainant pas de risque important hors du site</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1662.95)">
+            <g transform="matrix(10,0,0,10,1248.97,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 5 - accident entrainant un risque hors du site</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1648.64)">
+            <g transform="matrix(10,0,0,10,1131.12,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 6 - accident grave</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-980.513,-1633.95)">
+            <g transform="matrix(10,0,0,10,1136.67,1756.12)">
+            </g>
+            <text x="1025.51px" y="1756.12px" style="font-family:'Helvetica';font-size:10px;fill:rgb(35,31,32);">INES 7 - accident majeur</text>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-220.132)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(169,138,54);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.169213,0,0,0.155032,-134.069,-131.79)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(128,128,128);stroke:black;stroke-width:4.01px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-206.095)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(74,66,128);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-192.059)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(113,148,188);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-178.022)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(15,109,114);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-163.985)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(141,185,89);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-150.054)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(230,166,79);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.157993,0,0,0.144752,-123.322,-135.598)">
+            <path d="M991.1,1718.2L1024.42,1784.84L957.782,1784.84L991.1,1718.2Z" style="fill:rgb(152,41,57);stroke:black;stroke-opacity:0.95;stroke-width:4.29px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
     </g>
 </svg>

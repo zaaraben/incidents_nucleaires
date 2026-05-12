@@ -1229,4 +1229,8 @@ span.badge.counter-slide {
   .xs.mode-d #layers-container-box{
 	bottom: calc(var(--mv-bottom-h) + 10px) !important;
   }
-  
+
+.mv-grip {
+  display: none !important;
+}
+
