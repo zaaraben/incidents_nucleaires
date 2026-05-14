@@ -8,7 +8,7 @@
     style="apps/incidents_nucleaires/css/theme.css" 
     templaterightinfopanel="brut"
     togglealllayersfromtheme="true"/>
-    <mapoptions maxzoom="19" projection="EPSG:3857" center="261845, 6000000" zoom="7" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="19" projection="EPSG:3857" center="310640.0829509563, 5907053.545878422" zoom="6" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
     <baselayers style="gallery">
         <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
@@ -31,8 +31,8 @@
          vectorlegend="false"
          searchable="false" queryable="true"
          tooltip="true"
-         tooltipcontent="{{nom_site}}"
-         attribution="Référentiel sites">
+         tooltipfix="true"
+         tooltipcontent="{{nom_site}}">
     <template url="apps/incidents_nucleaires/templates/sites.mst"></template>
   </layer>
 </theme>

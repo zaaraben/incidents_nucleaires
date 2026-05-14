@@ -292,12 +292,12 @@ ul.nav-pills.nav-stacked {
 
 /** BOÎTE LEGENDE **/
 #layers-container-box {
-  max-width: 560px!important;
+  max-width: 380px!important;
   margin-top: 60px!important;
   margin-left: 0px!important;
   font-family: var(--myfont);
   color: #777;
-  padding: 20px;
+  padding: 12px 14px;
 }
 
 /* Header */
@@ -339,7 +339,7 @@ a#btn-remove-layers {
 }
 
 .layerdisplay-title {
-  padding: 15px 10px 0px
+  padding: 8px 6px 0;
 }
 
 .layerdisplay-title i {
@@ -374,13 +374,13 @@ a#btn-remove-layers {
 
 /* Affichage des img légende */
 .big-legend img {
-  max-width: 220px!important;
-  padding: 5px!important;
+  max-width: 100%!important;
+  padding: 3px!important;
 }
 
 #legend-secondaire {
-  max-width: 270px!important;
-  padding: 10px;
+  max-width: 100%!important;
+  padding: 6px 0;
 }
 
 /* Nom des attributs */
@@ -1047,12 +1047,23 @@ span.badge.counter-slide {
 }
 
 /* ================================
-   LÉGENDE – FORCER L’IMAGE À S’ÉTIRER
+   LÉGENDE – image principale : pleine largeur du panneau pour SVG lisible
+   Autres images du panneau : taille intrinsèque, plafonnée
    ================================ */
+#legend-modal .layerdisplay-legend img,
+#legend-modal .big-legend img,
+#layers-container-box .layerdisplay-legend img,
+#layers-container-box .big-legend img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
 #legend-modal img,
 #layers-container-box img {
-  width: 100% !important;
-  max-width: none !important;
+  max-width: 100% !important;
+  width: auto !important;
   height: auto !important;
   display: block;
 }
