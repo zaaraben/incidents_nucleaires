@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <application id="incidents_nucleaires" 
-    title="Incidents et accidents nucléaires publiés en avril 2026" 
+    title="Incidents et accidents nucléaires publiés en mai 2026" 
     mouseposition="false" 
     logo="apps/incidents_nucleaires/icon_map.png" help="apps/incidents_nucleaires/help.html" 
     measuretools="true" exportpng="true" geoloc="true"
