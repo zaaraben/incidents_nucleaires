@@ -1,10 +1,10 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated": "2026-05-10T11:16:10",
+    "generated": "2026-06-05T09:11:17",
     "nb_sites": 18,
-    "nb_incidents_affiches": 4,
-    "nb_total_incidents": 2973
+    "nb_incidents_affiches": 3,
+    "nb_total_incidents": 2976
   },
   "features": [
     {
@@ -12,33 +12,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.270833,
-          45.798333
+          4.731389,
+          44.330833
         ]
       },
       "properties": {
-        "nom_site": "Bugey",
+        "nom_site": "Tricastin",
         "nb_incidents_affiches": 2,
-        "nb_total_incidents": 195,
+        "nb_total_incidents": 295,
         "ines_max": 1,
         "a_des_incidents": true,
-        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-du-bugey/avis-d-incidents#active-tab",
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-du-tricastin/avis-d-incidents#active-tab",
         "incidents": [
           {
             "niveau_ines": 1,
-            "date_incident": null,
-            "date_declaration": "2026-04-20",
-            "date_publication": "2026-04-22",
-            "description": "Indisponibilité prolongée d’un groupe électrogène de secours",
-            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilite-prolongee-d-un-groupe-electrogene-de-secours"
+            "date_incident": "2026-03-30",
+            "date_declaration": "2026-05-18",
+            "date_publication": "2026-05-22",
+            "description": "Indisponibilité prolongée de la fonction d’isolement automatique de la barrière thermique d’un groupe motopompe primaire",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/fonction-d-isolement-automatique-de-la-barriere-thermique-d-un-groupe-motopompe-primaire"
           },
           {
             "niveau_ines": 1,
-            "date_incident": null,
-            "date_declaration": "2026-03-26",
-            "date_publication": "2026-04-08",
-            "description": "Indisponibilité prolongée des groupes électrogènes à moteur diesel d’ultime secours",
-            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilite-prolongee-des-groupes-electrogenes-a-moteur-diesel-d-ultime-secours"
+            "date_incident": "2026-05-03",
+            "date_declaration": "2026-05-06",
+            "date_publication": "2026-05-12",
+            "description": "Non-respect d’une prescription permanente des règles générales d’exploitation",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/non-respect-d-une-prescription-permanente-des-regles-generales-d-exploitation2"
           }
         ]
       }
@@ -48,53 +48,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.881667,
-          49.536389
+          3.517778,
+          48.515278
         ]
       },
       "properties": {
-        "nom_site": "Flamanville",
+        "nom_site": "Nogent",
         "nb_incidents_affiches": 1,
-        "nb_total_incidents": 152,
+        "nb_total_incidents": 123,
         "ines_max": 1,
         "a_des_incidents": true,
-        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/normandie/centrale-nucleaire-de-flamanville/avis-d-incidents#active-tab",
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/grand-est/centrale-nucleaire-de-nogent-sur-seine/avis-d-incidents#active-tab",
         "incidents": [
           {
             "niveau_ines": 1,
-            "date_incident": null,
-            "date_declaration": "2026-03-24",
-            "date_publication": "2026-04-04",
-            "description": "Indisponibilités des groupes électrogènes de secours à moteur diesel",
-            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/indisponibilites-des-groupes-electrogenes-de-secours-a-moteur-diesel"
-          }
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.690833,
-          45.256111
-        ]
-      },
-      "properties": {
-        "nom_site": "Blayais",
-        "nb_incidents_affiches": 1,
-        "nb_total_incidents": 151,
-        "ines_max": 1,
-        "a_des_incidents": true,
-        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/nouvelle-aquitaine/centrale-nucleaire-du-blayais/avis-d-incidents#active-tab",
-        "incidents": [
-          {
-            "niveau_ines": 1,
-            "date_incident": null,
-            "date_declaration": "2026-01-27",
-            "date_publication": "2026-04-08",
-            "description": "Levée des équipements internes de la cuve avec une grappe accrochée",
-            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/levee-des-equipements-internes-de-la-cuve-avec-une-grappe-accrochee"
+            "date_incident": "2026-04-07",
+            "date_declaration": "2026-04-30",
+            "date_publication": "2026-05-21",
+            "description": "Détection tardive du non-respect des règles générales d’exploitation du réacteur 2",
+            "url_incident": "https://reglementation-controle.asnr.fr/controle/actualites-du-controle/installations-nucleaires/avis-d-incident-des-installations-nucleaires/detection-tardive-du-non-respect-des-regles-generales-d-exploitation-du-reacteur-2"
           }
         ]
       }
@@ -115,6 +87,44 @@
         "ines_max": 0,
         "a_des_incidents": false,
         "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/centre-val-de-loire/centrale-nucleaire-de-belleville-sur-loire/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.690833,
+          45.256111
+        ]
+      },
+      "properties": {
+        "nom_site": "Blayais",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 151,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/nouvelle-aquitaine/centrale-nucleaire-du-blayais/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.270833,
+          45.798333
+        ]
+      },
+      "properties": {
+        "nom_site": "Bugey",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 195,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-du-bugey/avis-d-incidents#active-tab",
         "incidents": []
       }
     },
@@ -237,6 +247,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -1.881667,
+          49.536389
+        ]
+      },
+      "properties": {
+        "nom_site": "Flamanville",
+        "nb_incidents_affiches": 0,
+        "nb_total_incidents": 152,
+        "ines_max": 0,
+        "a_des_incidents": false,
+        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/normandie/centrale-nucleaire-de-flamanville/avis-d-incidents#active-tab",
+        "incidents": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           0.845278,
           44.106667
         ]
@@ -267,25 +296,6 @@
         "ines_max": 0,
         "a_des_incidents": false,
         "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/hauts-de-france/centrale-nucleaire-de-gravelines/avis-d-incidents#active-tab",
-        "incidents": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          3.517778,
-          48.515278
-        ]
-      },
-      "properties": {
-        "nom_site": "Nogent",
-        "nb_incidents_affiches": 0,
-        "nb_total_incidents": 122,
-        "ines_max": 0,
-        "a_des_incidents": false,
-        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/grand-est/centrale-nucleaire-de-nogent-sur-seine/avis-d-incidents#active-tab",
         "incidents": []
       }
     },
@@ -362,25 +372,6 @@
         "ines_max": 0,
         "a_des_incidents": false,
         "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/centre-val-de-loire/centrale-nucleaire-de-saint-laurent-des-eaux/avis-d-incidents#active-tab",
-        "incidents": []
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.731389,
-          44.330833
-        ]
-      },
-      "properties": {
-        "nom_site": "Tricastin",
-        "nb_incidents_affiches": 0,
-        "nb_total_incidents": 293,
-        "ines_max": 0,
-        "a_des_incidents": false,
-        "url_asnr": "https://reglementation-controle.asnr.fr/controle/l-asnr-en-region/auvergne-rhone-alpes/centrale-nucleaire-du-tricastin/avis-d-incidents#active-tab",
         "incidents": []
       }
     }
