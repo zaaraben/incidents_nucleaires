@@ -292,7 +292,7 @@ ul.nav-pills.nav-stacked {
 
 /** BOÎTE LEGENDE **/
 #layers-container-box {
-  max-width: 380px!important;
+  max-width: 600px!important;
   margin-top: 60px!important;
   margin-left: 0px!important;
   font-family: var(--myfont);
@@ -877,7 +877,7 @@ span.badge.counter-slide {
 }
 
 .mv-legend {
-  width: 90%;
+  width: 100%;
 }
 
 /* MODE MOBILE MVIEWER - carte plein écran sous la barre du haut */
