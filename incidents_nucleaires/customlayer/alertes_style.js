@@ -6,12 +6,12 @@ function colorByINES(ines) {
   var v = (ines === null || ines === undefined || ines === "") ? null : Number(ines);
   if (v === null || isNaN(v)) return "rgba(130,130,130,0.85)"; // NC
   if (v <= 0) return "rgba(241,245,248,1)";
-  if (v === 1) return "rgba(169,138,54,1)";
+  if (v === 1) return "rgba(120,99,34,1)";
   if (v === 2) return "rgb(74,66, 128)";
   if (v === 3) return "rgba(113,147,188,1)";
   if (v === 4) return "rgba(8,109,8,1)";
   if (v === 5) return "rgba(141,185,89,1)";
-  if (v === 6) return "rgba(230,166,79,1)";
+  if (v === 6) return "rgba(231,165,35,1)";
   if (v === 7) return "rgba(152,42,57,1)";
   return "rgba(220,20,60,0.85)"; // 4+
 }
