@@ -1,0 +1,123 @@
+# Mise à jour de la carte « Incidents nucléaires »
+#
+# Se déclenche quand un fichier Excel est déposé dans sources/ (branche main).
+# Le script produit centrales_incidents.geojson, met à jour le titre et la date,
+# et le résultat est enregistré dans le dépôt.
+#
+# En cas d'erreur, le workflow échoue et GitHub envoie un e-mail.
+# Un site absent du référentiel ouvre une issue.
+
+name: Mise à jour des incidents
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sources/*.xlsx"
+  workflow_dispatch:
+    inputs:
+      fichier:
+        description: "Fichier dans sources/ (vide = le plus récent)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: maj-incidents
+  cancel-in-progress: false
+
+jobs:
+  mise-a-jour:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Europe/Paris
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Choisir le fichier Excel
+        id: choix
+        env:
+          FICHIER: ${{ inputs.fichier }}
+          EVENEMENT: ${{ github.event_name }}
+          AVANT: ${{ github.event.before }}
+        run: |
+          if [ -n "$FICHIER" ]; then
+            CHEMIN="sources/$(basename "$FICHIER")"
+          elif [ "$EVENEMENT" = "push" ] && git cat-file -e "$AVANT" 2>/dev/null; then
+            # Le plus récent des fichiers ajoutés ou modifiés par ce dépôt
+            CHEMIN=$(git diff --name-only --diff-filter=AM "$AVANT" HEAD -- 'sources/*.xlsx' | sort | tail -n 1)
+          fi
+          if [ -z "${CHEMIN:-}" ]; then
+            CHEMIN=$(ls sources/*.xlsx 2>/dev/null | sort | tail -n 1)
+          fi
+          if [ -z "$CHEMIN" ] || [ ! -f "$CHEMIN" ]; then
+            echo "::error::Aucun fichier Excel trouvé dans sources/."
+            exit 1
+          fi
+          echo "Fichier traité : $CHEMIN"
+          echo "chemin=$CHEMIN" >> "$GITHUB_OUTPUT"
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Installer les dépendances
+        run: pip install -r scripts/requirements.txt
+
+      - name: Lancer le script
+        env:
+          CHEMIN: ${{ steps.choix.outputs.chemin }}
+        run: python scripts/maj_incidents_nucleaires.py "$CHEMIN"
+
+      - name: Enregistrer les nouvelles données
+        env:
+          CHEMIN: ${{ steps.choix.outputs.chemin }}
+        run: |
+          if [ -z "$(git status --porcelain incidents_nucleaires.xml incidents_nucleaires/)" ]; then
+            echo "Aucun changement."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add incidents_nucleaires.xml incidents_nucleaires/
+          git commit -m "Carte mise à jour depuis $(basename "$CHEMIN")"
+          git push
+
+      - name: Signaler les sites absents du référentiel
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          META=incidents_nucleaires/data/centrales_incidents.meta.json
+          INCONNUS=$(python -c "import json;print(', '.join(json.load(open('$META'))['centrales_inconnues']))")
+          if [ -z "$INCONNUS" ]; then
+            echo "Tous les sites sont dans le référentiel."
+            exit 0
+          fi
+          MOIS=$(python -c "import json;print(json.load(open('$META'))['mois_publications'])")
+          TITRE="Sites absents du référentiel ($MOIS)"
+          if [ "$(gh issue list --state open --search "\"$TITRE\" in:title" --json number --jq 'length')" != "0" ]; then
+            echo "Issue déjà ouverte pour $MOIS."
+            exit 0
+          fi
+          {
+            echo "Des incidents publiés en $MOIS concernent des sites absents de l'onglet"
+            echo "\`referentiel_sites\` du fichier Excel. Ils ne sont pas affichés sur la carte :"
+            echo
+            echo "**$INCONNUS**"
+            echo
+            echo "Pour les afficher : ajouter ces sites (nom, coordonnées, lien ASNR) à"
+            echo "l'onglet \`referentiel_sites\`, puis déposer à nouveau le fichier dans \`sources/\`."
+            echo "Sinon, fermer cette issue."
+          } > corps.md
+          gh issue create --title "$TITRE" --body-file corps.md
