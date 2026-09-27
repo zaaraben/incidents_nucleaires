@@ -50,3 +50,15 @@ dans le référentiel.
 Simples alertes : site absent du référentiel (ses incidents ne sont pas
 affichés), niveau INES absent ou hors 0-7, déclaration antérieure à
 l'incident, total historique manquant.
+
+## Automatisation
+
+Déposer le fichier Excel du mois dans le dossier `sources/` (sur le site
+GitHub : *Add file › Upload files*). Le workflow
+`.github/workflows/maj-incidents.yml` se déclenche alors, lance ce script et
+enregistre la carte mise à jour dans le dépôt.
+
+- Erreur (onglet, colonne, coordonnée) : le workflow échoue, GitHub envoie un e-mail.
+- Site absent du référentiel : une issue est ouverte.
+- Relancer à la main : onglet **Actions** › « Mise à jour des incidents » ›
+  « Run workflow » (le fichier le plus récent de `sources/` est utilisé).
