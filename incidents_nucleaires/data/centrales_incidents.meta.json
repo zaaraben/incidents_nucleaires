@@ -1,8 +1,10 @@
 {
-  "mois_publications": "2026-07",
-  "source": "20260801_incidents_nucleaires.xlsx",
-  "date_traitement": "2026-09-27",
-  "nb_incidents_affiches": 3,
+  "mois_publications": "2026-09",
+  "source": "20261001_incidents_nucleaires.xlsx",
+  "date_traitement": "2026-10-16",
+  "nb_incidents_affiches": 7,
   "centrales_inconnues": [],
-  "alertes": []
+  "alertes": [
+    "Niveau INES absent ou hors 0-7 : Tricastin (2026-09-23)"
+  ]
 }
